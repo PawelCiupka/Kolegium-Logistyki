@@ -64,3 +64,7 @@ function closeMenu() {
         }
     }
 }
+
+function jump() {
+    window.location.hash = "x";
+}
