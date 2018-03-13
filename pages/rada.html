@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/style_additional.css">
 
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
@@ -25,10 +24,16 @@
 
     <div class="container">
 
+        <div id="scrollToStart">
+            <i class="fas fa-caret-up"></i>
+        </div>
+
         <header>
             <h1 style="display:none">Kolegium Logistyki - Politechnika Łódzka - Uczelnia Wyższa</h1>
             <div class="logo">
-                <img src="../img/icons/kolegiumLogo.png" alt="logo">
+                <a href="../index.html">
+                    <img src="../img/icons/kolegiumLogo.png" alt="logo">
+                </a>
             </div>
             <nav id="mobile-nav">
                 <button id="openMenuButton">
@@ -70,7 +75,7 @@
             <img src="../img/img_search.jpg" alt="">
         </div>
 
-        <div class="contentTitle">
+        <div id="CT" class="contentTitle">
             <img src="../img/icons/rada.png" class="iconContent">
             <h3>RADA SAMORZĄDU</h3>
         </div>
@@ -79,19 +84,19 @@
             <ul>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#PoznajNas">Poznaj nas</a>
+                    <span id="toPoznajNas">Poznaj nas</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#NaszaDzialalnosc">Nasza działalność</a>
+                    <span id="toNaszaDzialalnosc">Nasza działalność</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#DolaczDoNas">Dołącz do nas</a>
+                    <span id="toDolaczDoNas">Dołącz do nas</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#AkcjaAnkietyzacja">Akcja ankietyzacja</a>
+                    <span id="toAkcjaAnkietyzacja">Akcja ankietyzacja</span>
                 </li>
             </ul>
         </div>
@@ -237,7 +242,8 @@
 
     </div>
 
-    <script src="../scripts/menuScript.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/radaScripts.js"></script>
 </body>
 
 </html>

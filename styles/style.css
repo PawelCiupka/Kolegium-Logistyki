@@ -16,6 +16,20 @@ body {
     grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 1.6em;
 }
 
+#scrollToStart {
+    width: 1.5em;
+    height: 1.5em;
+    background: rgba(70, 173, 178, 0.5);
+
+    position:fixed;
+    top: 90%;
+    left: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(32, 96, 99);
+}
+
 header {
     grid-row: 1 / 2;
 

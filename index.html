@@ -14,7 +14,7 @@
     <link rel="Shortcut icon" href="img/favico.png">
     <link rel="stylesheet" href="styles/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
@@ -23,10 +23,16 @@
 
     <div class="container">
 
+        <div id="scrollToStart">
+            <i class="fas fa-caret-up"></i>
+        </div>
+
         <header>
             <h1 style="display:none">Kolegium Logistyki - Politechnika Łódzka - Uczelnia Wyższa</h1>
             <div class="logo">
-                <img src="img/icons/kolegiumLogo.png" alt="logo">
+                <a href="index.html">
+                    <img src="img/icons/kolegiumLogo.png" alt="logo">
+                </a>
             </div>
             <nav id="mobile-nav">
                 <button id="openMenuButton">
@@ -36,7 +42,7 @@
 
                 <ul class="mobile-menu" id="mobileMenu">
                     <li>
-                        <a href="#">Informacje ogólne</a>
+                        <a href="index.html">Informacje ogólne</a>
                     </li>
                     <li>
                         <a href="pages/rada.html">Rada Samorządu</a>
@@ -68,7 +74,7 @@
             <img src="img/img_search.jpg" alt="">
         </div>
 
-        <div class="contentTitle">
+        <div class="contentTitle" id="CT">
             <img src="img/icons/oKolegium.png" class="iconContent">
             <h3>O KOLEGIUM LOGISTYKI</h3>
         </div>
@@ -77,36 +83,36 @@
             <ul>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#OKL">O Kolegium Logistyki</a>
+                    <span id="toOKL">O Kolegium Logistyki</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#OfertaKsztalcenia">Oferta kształcenia</a>
+                    <span id="toOfertaKsztalcenia">Oferta kształcenia</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#ProgramStudiow">Program Studiów / Opis przedmiotów / Punktacja ECTS
-                    </a>
+                    <span id="toProgramStudiow">Program Studiów / Opis przedmiotów / Punktacja ECTS
+                    </span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#Dyrekcja">Dyrekcja</a>
+                    <span id="toDyrekcja">Dyrekcja</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#Dziekanat">Dziekanat</a>
+                    <span id="toDziekanat">Dziekanat</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#OpiekunStudentow">Opiekun Studentów</a>
+                    <span id="toOpiekunStudentow">Opiekun Studentów</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#OpiekunPraktyk">Opiekun Praktyk oraz programu Erasmus+</a>
+                    <span id="toOpiekunPraktyk">Opiekun Praktyk oraz programu Erasmus+</span>
                 </li>
                 <!-- <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#WykladowcyKL">Wykładowcy KL</a>
+                    <span id="WykladowcyKL">Wykładowcy KL</span>
                 </li> -->
             </ul>
         </div>
@@ -319,7 +325,9 @@
 
     </div>
 
-    <script src="scripts/menuScript.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/indexScripts.js"></script>
+
 </body>
 
 </html>

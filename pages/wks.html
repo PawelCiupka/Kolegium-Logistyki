@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/style_additional.css">
 
-
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans" rel="stylesheet">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
@@ -26,10 +24,16 @@
 
     <div class="container">
 
+        <div id="scrollToStart">
+            <i class="fas fa-caret-up"></i>
+        </div>
+
         <header>
             <h1 style="display:none">Kolegium Logistyki - Politechnika Łódzka - Uczelnia Wyższa</h1>
             <div class="logo">
-                <img src="../img/icons/kolegiumLogo.png" alt="logo">
+                <a href="../index.html">
+                    <img src="../img/icons/kolegiumLogo.png" alt="logo">
+                </a>
             </div>
             <nav id="mobile-nav">
                 <button id="openMenuButton">
@@ -71,7 +75,7 @@
             <img src="../img/img_search.jpg" alt="">
         </div>
 
-        <div class="contentTitle">
+        <div id="CT" class="contentTitle">
             <img src="../img/icons/wks.png" class="iconContent">
             <h3 id="wks">WYDZIAŁOWA KOMISJA STYPENDIALNA</h3>
         </div>
@@ -80,15 +84,15 @@
             <ul>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#OKomisji">O komisji</a>
+                    <span id="toOKomisji">O komisji</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#Komisja">Komisja ds. Pomocy Materialnej</a>
+                    <span id="toKomisja">Komisja ds. Pomocy Materialnej</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#Dokumenty">Dokumenty</a>
+                    <span id="toDokumenty">Dokumenty</span>
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
@@ -96,7 +100,7 @@
                 </li>
                 <li>
                     <i class="fas fa-angle-double-right"></i>
-                    <a href="#GodzinyPrzyjec">Godziny Przyjęć</a>
+                    <span id="toGodzinyPrzyjec">Godziny Przyjęć</span>
                 </li>
             </ul>
         </div>
@@ -251,7 +255,8 @@
 
     </div>
 
-    <script src="../scripts/menuScript.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/wksScripts.js"></script>
 </body>
 
 </html>
