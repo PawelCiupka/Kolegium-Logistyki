@@ -1,0 +1,52 @@
+/* RADA */
+.person {
+    background: #fff;
+    margin: 0 0 1.8em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.person .name {
+    width: 70%;
+    margin: 0 0 0.5em 0;
+}
+
+.person .name .fa-user {
+    font-size: 1.8em;
+    color:  #acacac;
+}
+
+.person .name p {
+    margin: 0 0 0.1em 0;
+}
+
+.person .name span {
+    border-bottom: 1px solid #46adb2;
+}
+
+.person .functions {
+    list-style-type: none;
+    font-size: 0.9em;
+}
+
+section ul {
+    margin: 0 0 0 5%;
+    width: 95%;
+}
+
+/* WKS */
+.docs {
+    list-style-type: none;
+}
+
+.docs li {
+    margin: 0 0 0.8em 0;
+}
+
+.docs li a {
+    border-bottom: 1px solid #46adb2;
+
+}
