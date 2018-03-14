@@ -6,14 +6,14 @@
 
 
 body {
-    font-size: 3vh;
-    /* overflow-x: hidden; */
+    font-size: 120%;   
+    overflow-x: hidden;
 }
 
 .container {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 1.6em;
+    grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 3em;
 }
 
 #scrollToStart {
@@ -165,7 +165,7 @@ h2 {
 }
 
 .contentChoice ul li {
-    margin: 0 0em 0.5em 1.5em;
+    margin: 0 0 1em 1.5em;
 }
 
 .contentChoice ul li a {
@@ -216,15 +216,15 @@ footer {
     grid-row: 7 / 8;
 
     background: #750104;
+    width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logoPL {
-    display: none;
-    margin: 0 0 0 0.2em;
+    margin: 0 0 0 0.3em;
     max-width: 5em;
     width: auto
 }
@@ -235,6 +235,7 @@ footer {
 }
 
 footer span {
+    margin: 2em 2em 0 0;
     font-size: 0.5em;
     color: #fff;
 }
@@ -247,11 +248,12 @@ footer span {
     .container {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: minmax(6em, 6em) auto auto 3em auto auto 1.6em;
+        grid-template-rows: minmax(6em, 6em) auto auto 3em auto auto 3em;
     }
 
     .logo {
-        width: 11em; 
+        min-width: 11em;
+        max-width: 15em; 
     }
 
     #openMenuButton {
@@ -259,7 +261,7 @@ footer span {
     }
 
     .contentTitle {
-        margin: 1em 0 1em 0;
+        width: 100%;
     }
 
     .contentTitle h3 {
