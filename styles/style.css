@@ -13,7 +13,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 3em;
+    grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 4em;
 }
 
 #scrollToStart {
@@ -219,14 +219,15 @@ footer {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .logoPL {
+    display: none;
     margin: 0 0 0 0.3em;
-    max-width: 5em;
-    width: auto
+    max-width: 35%;
+    height: auto;
 }
 
 .logoPL img {
@@ -248,12 +249,13 @@ footer span {
     .container {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: minmax(6em, 6em) auto auto 3em auto auto 3em;
+        grid-template-rows: minmax(6em, 6em) auto auto 6em auto auto 3em;
     }
 
     .logo {
-        min-width: 11em;
-        max-width: 15em; 
+        min-width: 13em;
+        max-width: auto; 
+        height: auto;
     }
 
     #openMenuButton {
@@ -261,7 +263,7 @@ footer span {
     }
 
     .contentTitle {
-        width: 100%;
+        width: 90%;
     }
 
     .contentTitle h3 {
@@ -269,7 +271,7 @@ footer span {
     }
 
     #wks {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
 }
