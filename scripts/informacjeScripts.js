@@ -1,5 +1,5 @@
 document.getElementById('scrollToStart').onclick = function() { scrollUpToElement('CT'); };
-document.getElementById('toOKL').onclick = function() { scrollDownToElement('OKL'); };
+// document.getElementById('toOKL').onclick = function() { scrollDownToElement('OKL'); };
 document.getElementById('toOfertaKsztalcenia').onclick = function() { scrollDownToElement('OfertaKsztalcenia'); };
 document.getElementById('toProgramStudiow').onclick = function() { scrollDownToElement('ProgramStudiow'); };
 document.getElementById('toDyrekcja').onclick = function() { scrollDownToElement('Dyrekcja'); };
