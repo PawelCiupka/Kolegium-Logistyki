@@ -124,7 +124,7 @@ h2 {
     width: 100%;
 }
 
-.contentTitle {
+.contentTitle, .contentTitleDesktop {
     grid-row: 4 / 5;
     margin-left: auto;
     
@@ -136,13 +136,18 @@ h2 {
     align-items: center;
 }
 
-.contentTitle h3 {
+
+.contentTitleDesktop {
+    display: none;
+}
+
+.contentTitle h3, .contentTitleDesktop h3 {
     font-size: 1.2em;
     color: #bbb;
     text-align: center;
 }
 
-.contentTitle .iconContent {
+.contentTitle .iconContent, contentTitleDesktop .iconContent {
     text-align: center;
 }
 
@@ -179,6 +184,10 @@ h2 {
 
 .contentChoice ul li .fa-angle-double-right {
     color: #46adb2;
+}
+
+.contentImage {
+    display: none;
 }
 
 .content {
@@ -281,19 +290,38 @@ footer span {
 }
 
 @media screen and (min-width: 786px) {
-    body {
 
+    body {
+        min-height: 100vh;
+    }
+
+    * {         
+        grid-column: 2 / 7;
     }
 
     .container {
-        grid-template-rows: 7em 1.5em auto 4em;
+        grid-template-rows: 15vh 4vh 17vh minmax(58vh, auto) 7vh;        
+        grid-template-columns: 2% 33% 10% 10% 10% 33% 2%;
+    }
+
+    #scrollToStart {
+        display: none;
     }
 
     header {
+        width: 100vw;
+        height: 15vh;
+
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        border-bottom: 2px solid #46adb2;
+        background: #fff;
+        
+        position: fixed;
     }
 
     .mobile-menu {
@@ -321,7 +349,7 @@ footer span {
 
     .desktop-menu li {
         height: 100%;
-        padding: 0 1em 0 1em;
+        padding: 0 0.2em 0 0.2em;
 
         list-style: none;
         text-align: center;        
@@ -346,27 +374,64 @@ footer span {
     }
 
     h2 {
-        font-size: 80%;
-    }
-
-    .mainImage {
-        display: none;
+        grid-column: -1 / 1;
+        font-size: 100%;
     }
 
     .contentTitle {
+        grid-row: 3 / 4;
+        grid-column: 2 / 6;
+
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    .contentTitle h3 {
+        font-size: 2em;
+    }
+
+    .contentTitle .iconContent {
+        margin: 0 0 0 1em;
+        font-size: 1.6em;
+    }
+
+    .contentChoice {
         display: none;
     }
 
-    .content {
-        grid-row: 3 / 4; 
-
-        /* PODZIELIC NA KOLUMNY: - / SREDNIA KOLUMNA / MALA SRODKOWA / SREDNIA KOLUMNA / -  */
+    .mainImage {
+        display: initial;
+        
+        grid-row: 3 / 5;
+        grid-column: 6 / 8;
     }
 
+    .mainImage img {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 0ch;
+        height: 100%; 
+    }
 
+    .content {
+        grid-row: 4 / 5; 
+        grid-column: 2 / 6;
+
+        font-size: 1.2em;
+    }
+
+    section h4 {
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    section p {
+        margin: 1.5em 0 1.5em 0;
+    }
 
     footer {
-        grid-row: 4 / 5;
+        grid-column: -1 / 1;
+        grid-row: 5 / 6;
     }
 
 }
