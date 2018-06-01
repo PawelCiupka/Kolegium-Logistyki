@@ -80,12 +80,18 @@
 
 .photosRow {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #aaa;
     margin: 1.5em 0 0 0;
     padding: 0 0 3em 0;
+}
+
+.photosRow img {
+    width: 33%;
+    height: auto;
 }
 
 .photosRowEmpty {
@@ -98,12 +104,6 @@
 .photosRowEmpty:nth-last-child(1) {
     border: 0px;
 }
-
-.photosRow img {
-    width: 33%;
-    height: 50%;
-}
-
 
 
 @media screen and (max-width: 768px) {
@@ -123,6 +123,10 @@
     #PoznajNas li {
         width: 100%;
     }
+
+    #NaszaDzialalnosc li {
+        font-size: 1em;
+    }
     
     .AnkietaIMG {
         width: 100%;
@@ -134,10 +138,6 @@
 
     .AnkietaIMG img {
         display: none;
-    }
-
-    #NaszaDzialalnosc li {
-        font-size: 1em;
     }
 
     .photosRow {
@@ -189,6 +189,29 @@
 
     #wksicon {
         height: 2em;
+    }
+}
+
+/* Contact */
+@media screen and (min-width: 768px) {
+    
+    .contactContainer {
+        grid-template-rows: 15vh 3vh 0vh 32vh 50vh 10vh;  
+    }
+
+    .contactTitle {
+        font-size: 1.1em;
+    }
+
+    .contactContent {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1.5em;
+    }
+
+    .contactContent section {
+        border: 0;
     }
 }
 

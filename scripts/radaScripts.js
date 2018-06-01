@@ -3,4 +3,3 @@ document.getElementById('toPoznajNas').onclick = function() { scrollDownToElemen
 document.getElementById('toNaszaDzialalnosc').onclick = function() { scrollDownToElement('NaszaDzialalnosc'); };
 document.getElementById('toDolaczDoNas').onclick = function() { scrollDownToElement('DolaczDoNas'); };
 document.getElementById('toRekrutacja').onclick = function() { scrollDownToElement('Rekrutacja'); };
-document.getElementById('toAkcjaAnkietyzacja').onclick = function() { scrollDownToElement('AkcjaAnkietyzacja'); };
