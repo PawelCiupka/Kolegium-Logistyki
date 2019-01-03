@@ -1,0 +1,455 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    font-size: 120%;   
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: minmax(3.3em, 3.3em) auto auto 4em auto auto 4em;
+}
+
+#scrollToStart {
+    width: 1.5em;
+    height: 1.5em;
+    background: rgba(70, 173, 178, 0.5);
+
+    position: fixed;
+    top: 90%;
+    left: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(32, 96, 99);
+}
+
+header {
+    grid-row: 1 / 2;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    width: 8em;
+    height: auto; 
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav {
+    margin: 0 1em 0 1em;
+}
+
+#openMenuButton {
+    font-size: 2em;
+    color: #46adb2;
+    background: transparent;
+    border: 0;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-menu li {
+    width: 100%;
+
+    margin: 0.5em 0 0.5em 0;
+    opacity: 0;
+
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.mobile-menu li:nth-child(7) {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0.2em 0 0  0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    grid-row: 2 / 3;
+
+    height: auto;
+    background: #46adb2;
+    padding: 0.2em;
+
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: normal;
+    color: #fff;
+}
+
+.mainImage {
+    grid-row: 3 / 4;
+}
+
+.mainImage img {
+    width: 100%;
+}
+
+.contentTitle, .contentTitleDesktop {
+    grid-row: 4 / 5;
+    margin-left: auto;
+    
+    margin-right: auto;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contentTitleDesktop {
+    display: none;
+}
+
+.contentTitle h3, .contentTitleDesktop h3 {
+    font-size: 1.2em;
+    color: #bbb;
+    text-align: center;
+}
+
+.contentTitle .iconContent, contentTitleDesktop .iconContent {
+    text-align: center;
+}
+
+#wks {
+    font-size: 0.8em;
+}
+
+.iconContent {
+    height: 2.5em;
+    margin: 0 1em 0 0;
+}
+
+.contentChoice {
+    grid-row: 5 / 6;
+
+    border-bottom: 0.2em solid #46adb2;
+    padding: 0 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.contentChoice ul {    
+    list-style: none;
+    font-size: 0.85em;
+}
+
+.contentChoice ul li {
+    margin: 0 0 1em 1.5em;
+}
+
+.contentChoice ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contentChoice ul li .fa-angle-double-right {
+    color: #46adb2;
+}
+
+.contentImage {
+    display: none;
+}
+
+.content {
+    grid-row: 6 / 7;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    text-align: justify;
+    font-size: 0.80em;
+
+    margin: 0.5em 0 1em 0;
+    width: 100%;
+}
+
+section h4 {
+    margin-bottom: 1em;
+}
+
+section {
+    width: 90%;
+    border-bottom: 1px solid #aaa;
+    padding: 0.5em 0 1em 0;
+}
+
+section p {
+    margin: 1.5em 0 1.5em 0;
+}
+
+section a {
+    text-decoration: none;
+    color: #46adb2;
+}
+
+section li {
+    margin: 0 0 0 1em;
+    width: 90%;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 0 0 0.5em 0;
+    color: #1ec1c9;
+}
+
+footer {
+    grid-row: 7 / 8;
+
+    background: #750104;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoPL {
+    margin: 0 0 0 1em;
+    background: url("../img/plLogo.png");
+    background-size: cover;
+    width: 4em;    
+    height: 2em;
+}
+
+footer span {
+    margin: 2em 2em 0 0;
+    font-size: 0.5em;
+    color: #fff;
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: minmax(6em, 6em) auto auto 6em auto auto 3em;
+    }
+
+    .logo {
+        min-width: 13em;
+        max-width: auto; 
+        height: auto;
+    }
+
+    #openMenuButton {
+        font-size: 3.2em;
+    }
+
+    .contentTitle {
+        width: 90%;
+    }
+
+    .contentTitle h3 {
+        font-size: 2em;
+    }
+
+    #wks {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 786px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    * {         
+        grid-column: 2 / 3;
+    }
+
+    .container {
+        grid-template-rows: 15vh 3vh 70vh 12vh auto 10vh;        
+        grid-template-columns: 2% 96% 2%;
+    }
+
+    #scrollToStart {
+        display: none;
+    }
+
+    header {
+        width: 100vw;
+        height: 15vh;
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        border-bottom: 2px solid #46adb2;
+        background: #fff;
+        
+        position: fixed;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    #openMenuButton {
+        display: none;
+    }
+
+    nav {
+        width: 70%;
+        height: 100%;
+    }
+
+    ul.desktop-menu {
+        height: 100%;
+
+        list-style: none;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .desktop-menu li {
+        height: 100%;
+        padding: 0 0.2em 0 0.2em;
+
+        list-style: none;
+        text-align: center;        
+    }
+
+    .desktop-menu a {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+
+        color: #46adb2;
+        text-decoration: none;
+        padding: 0 1em 0 1em;
+        
+        transition-duration: 0.15s;
+    }
+
+    .desktop-menu a:hover {
+        color: #fff;
+        background: #46adb2;
+    }
+
+    h2 {
+        grid-column: -1 / 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 90%;
+    }
+
+    .contentTitle {
+        grid-row: 4 / 5;
+        grid-column: -1 / 1;
+    }
+
+    .contentTitle h3 {
+        
+        font-size: 2em;
+    }
+
+    .contentTitle .iconContent {
+        margin: 0 1em 0 1em;
+        font-size: 2em;
+    }
+
+    .contentChoice {
+        display: none;
+    }
+
+    .mainImage {
+        grid-row: 3 / 4;
+        grid-column: -1 / 1;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    .mainImage img {
+        display: none;
+    }
+
+    .content {
+        grid-row: 5 / 6; 
+        grid-column: 1 / -1;
+
+        font-size: 1.2em;
+    }
+
+    section h4 {
+        margin-bottom: 1em;
+    }
+
+    section p {
+        margin: 1.5em 0 1.5em 0;
+    }
+
+    section {
+        border-bottom: 1px solid #aaa;
+        padding: 0.5em 0 1em 0;
+    }
+
+    section li {
+        width: 100%;
+    }
+
+    footer {
+        grid-column: -1 / 1;
+        grid-row: 6 / 7;
+        font-size: 1.5em;
+    }
+
+    footer .logoPL {
+        margin: 0 0 0 3em;
+    }
+
+}

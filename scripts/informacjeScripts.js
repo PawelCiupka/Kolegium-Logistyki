@@ -1,0 +1,9 @@
+document.getElementById('scrollToStart').onclick = function() { scrollUpToElement('CT'); };
+// document.getElementById('toOKL').onclick = function() { scrollDownToElement('OKL'); };
+document.getElementById('toOfertaKsztalcenia').onclick = function() { scrollDownToElement('OfertaKsztalcenia'); };
+document.getElementById('toProgramStudiow').onclick = function() { scrollDownToElement('ProgramStudiow'); };
+document.getElementById('toDyrekcja').onclick = function() { scrollDownToElement('Dyrekcja'); };
+document.getElementById('toDziekanat').onclick = function() { scrollDownToElement('Dziekanat'); };
+document.getElementById('toOpiekunStudentow').onclick = function() { scrollDownToElement('OpiekunStudentow'); };
+document.getElementById('toOpiekunPraktyk').onclick = function() { scrollDownToElement('OpiekunPraktyk'); };
+// document.getElementById('WykladowcyKL').onclick = function() { scrollDownToElement('WykladowcyKL'); };
